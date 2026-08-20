@@ -149,7 +149,7 @@ def process_plugin(name: str, check_only: bool) -> dict:
 
 
 def zip_url_for(name: str) -> str:
-    org_repo = "REPLACE_ME/terminalis-plugins"
+    org_repo = "JuanEoss/terminalis-releases"
     return f"https://raw.githubusercontent.com/{org_repo}/main/plugins/{name}/build/plugin.zip"
 
 

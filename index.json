@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-20T16:14:42Z",
+  "updated_at": "2026-08-20T16:16:21Z",
   "plugins": [
     {
       "name": "docker-monitor",
@@ -10,7 +10,7 @@
       "permissions": [
         "shell"
       ],
-      "zip_url": "https://raw.githubusercontent.com/REPLACE_ME/terminalis-plugins/main/plugins/docker-monitor/build/plugin.zip",
+      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/plugins/docker-monitor/build/plugin.zip",
       "sha256": "d9f199530652b0d4962f0bc839e5dfcd2ecd45d504ecbc3a7d150cad6bd5def6",
       "size_bytes": 804
     },
@@ -20,7 +20,7 @@
       "author": "someone",
       "description": "Rendered Markdown with Mermaid diagram support and syntax-highlighted code blocks.",
       "permissions": [],
-      "zip_url": "https://raw.githubusercontent.com/REPLACE_ME/terminalis-plugins/main/plugins/markdown-viewer/build/plugin.zip",
+      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/plugins/markdown-viewer/build/plugin.zip",
       "sha256": "32207514a7fec336c7a6ea63317ca0c2404d84e2bd39556b3d1d01774a18b299",
       "size_bytes": 1123
     }
