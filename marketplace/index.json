@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-20T18:34:19Z",
+  "updated_at": "2026-08-20T20:25:38Z",
   "plugins": [
     {
-      "name": "plugin-de-prueba",
+      "name": "space-invaders",
       "version": "1.0",
       "author": "terminalis-plugins",
-      "description": "Placeholder plugin used to validate the marketplace registry pipeline (now via self-hosted runner). Remove once real plugins are published.",
+      "description": "Play a sandboxed Space Invaders game inside Terminalis.",
       "permissions": [],
-      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/marketplace/plugins/plugin-de-prueba.zip",
-      "sha256": "e25f4f3f781ec81808e6e4ded9db8d35aa92250e9eb7f3df5606ac8bd88ac123",
-      "size_bytes": 317
+      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/marketplace/plugins/space-invaders.zip",
+      "sha256": "7b300541a65c617978d267d23a448264761fd27edcd2080e9346277dbe3bfe7d",
+      "size_bytes": 2588
     }
   ]
 }
