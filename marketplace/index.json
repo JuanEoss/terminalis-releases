@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-20T18:34:19Z",
+  "plugins": [
+    {
+      "name": "plugin-de-prueba",
+      "version": "1.0",
+      "author": "terminalis-plugins",
+      "description": "Placeholder plugin used to validate the marketplace registry pipeline (now via self-hosted runner). Remove once real plugins are published.",
+      "permissions": [],
+      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/marketplace/plugins/plugin-de-prueba.zip",
+      "sha256": "e25f4f3f781ec81808e6e4ded9db8d35aa92250e9eb7f3df5606ac8bd88ac123",
+      "size_bytes": 317
+    }
+  ]
+}

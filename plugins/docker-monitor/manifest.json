@@ -1,7 +1,0 @@
-{
-  "name": "docker-monitor",
-  "version": "1.0",
-  "author": "someone",
-  "description": "Show running Docker containers in a side panel.",
-  "permissions": ["shell"]
-}

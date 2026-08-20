@@ -1,0 +1,4 @@
+# Default owner for everything in the repo.
+# Required so "Require review from Code Owners" in the branch ruleset has
+# someone who can actually approve PRs.
+* @JuanEoss

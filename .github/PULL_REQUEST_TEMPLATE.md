@@ -1,18 +1,16 @@
-## Plugin PR checklist
+## This repo is generated-artifacts only
 
-- [ ] New plugin lives in `plugins/<name>/src/` (or this PR bumps an existing plugin's version)
-- [ ] `manifest.json` is present and its `name`/`version`/`permissions` match `M.name`/`M.version`/`M.permissions` in `src/init.lua`
-- [ ] Declared `permissions` are the minimum required — no `"shell"` unless the plugin actually calls `terminalis.shell`
-- [ ] Plugin only uses `require()` for files inside its own `src/` directory
-- [ ] Manually tested by loading the plugin locally (Settings → Plugins → Recargar)
+`marketplace/` (`index.json` + `plugins/*.zip`) is built and pushed automatically
+from [`terminalis-plugins`](https://github.com/JuanEoss/terminalis-plugins)
+(private) once a plugin is reviewed and merged there. Plugin source code, PRs, and
+review happen in that repo — not here.
 
-### What does this plugin do?
+If you're opening a PR against this repo directly, it's probably for something
+other than a plugin (repo infra, docs, ruleset config). Describe the change below.
+
+### What does this change and why?
 
 <!-- One or two sentences. -->
-
-### Permissions requested
-
-<!-- List each permission and why it's needed, or "none". -->
 
 ### Testing performed
 
