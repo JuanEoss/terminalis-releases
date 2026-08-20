@@ -27,18 +27,27 @@ jobs:
         run: python3 scripts/build_index.py --check
 
   # Only runs on push to main (i.e. after a PR has been human-reviewed and
-  # merged). This is the only job granted contents:write, so untrusted fork
-  # PRs never get a token capable of pushing to the repo.
+  # merged). main is rule-protected against direct pushes, including from
+  # the default GITHUB_TOKEN — so this job authenticates as the
+  # terminalis-release-publisher GitHub App instead, which has an explicit
+  # bypass entry in the branch ruleset.
   rebuild:
     needs: validate
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
+      - name: Generate App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
       - uses: actions/checkout@v4
         with:
           ref: main
+          token: ${{ steps.app-token.outputs.token }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -49,3 +58,5 @@ jobs:
         with:
           commit_message: "chore: rebuild plugin zip [skip ci]"
           file_pattern: "plugins/**/build/* index.json"
+          commit_user_name: "terminalis-release-publisher[bot]"
+          commit_user_email: "terminalis-release-publisher[bot]@users.noreply.github.com"
