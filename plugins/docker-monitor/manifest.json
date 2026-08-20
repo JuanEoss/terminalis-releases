@@ -2,6 +2,6 @@
   "name": "docker-monitor",
   "version": "1.0",
   "author": "someone",
-  "description": "Show running Docker containers in a side panel.",
+  "description": "Show running Docker containers and their status in a side panel.",
   "permissions": ["shell"]
 }
