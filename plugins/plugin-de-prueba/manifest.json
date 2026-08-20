@@ -1,0 +1,7 @@
+{
+  "name": "plugin-de-prueba",
+  "version": "1.0",
+  "author": "terminalis-plugins",
+  "description": "Placeholder plugin used to validate the marketplace registry pipeline. Remove once real plugins are published.",
+  "permissions": []
+}
