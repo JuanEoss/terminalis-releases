@@ -1,5 +1,7 @@
 # Terminalis Plugins
 
+[![Build plugin zips](https://github.com/JuanEoss/terminalis-releases/actions/workflows/build-plugin-zips.yml/badge.svg)](https://github.com/JuanEoss/terminalis-releases/actions/workflows/build-plugin-zips.yml)
+
 Curated registry and marketplace catalog for [Terminalis](https://github.com/) Lua plugins.
 
 - **`index.json`** — the catalog Terminalis's Settings → Plugins → Marketplace fetches over HTTPS to list installable plugins.
