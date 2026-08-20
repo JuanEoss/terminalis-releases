@@ -1,10 +1,22 @@
-# Terminalis Plugins
+# Terminalis Releases
 
-[![Build plugin zips](https://github.com/JuanEoss/terminalis-releases/actions/workflows/build-plugin-zips.yml/badge.svg)](https://github.com/JuanEoss/terminalis-releases/actions/workflows/build-plugin-zips.yml)
+Marketplace catalog for [Terminalis](https://github.com/) Lua plugins. This repo
+holds **generated build artifacts only** — no plugin source code lives here.
 
-Curated registry and marketplace catalog for [Terminalis](https://github.com/) Lua plugins.
+- **`marketplace/index.json`** — the catalog Terminalis's Settings → Plugins →
+  Marketplace fetches over HTTPS to list installable plugins.
+- **`marketplace/plugins/<name>.zip`** — each plugin's distributable, built and
+  checksummed automatically. Never hand-built or hand-edited.
 
-- **`index.json`** — the catalog Terminalis's Settings → Plugins → Marketplace fetches over HTTPS to list installable plugins.
-- **`plugins/<name>/`** — each plugin's reviewed source (`src/`), metadata (`manifest.json`), and CI-built distributable (`build/plugin.zip` + `checksum.sha256`).
+## Where plugins actually come from
 
-Every plugin here has gone through a human-reviewed pull request — there is no auto-merge and no third-party repo mixing. See [`CONTRIBUTING.md`](./CONTRIBUTING.md) to publish or update a plugin, and [`plugin-development.md`](./plugin-development.md) for the full plugin API, sandbox, and permission model plugins run under inside Terminalis.
+Plugin source code, contribution, and human review happen in
+[`terminalis-plugins`](https://github.com/JuanEoss/terminalis-plugins) (private).
+Once a plugin PR is reviewed and merged there, a workflow rebuilds
+`marketplace/plugins/<name>.zip` and `marketplace/index.json` from the full set of
+published plugins and pushes them here, authenticated as the
+`terminalis-release-publisher` GitHub App.
+
+This repo's own branch protections (PR + review required, direct pushes blocked)
+still apply to everything except that App's automated sync — so nothing reaches
+`main` here without either a reviewed PR or that same trusted, auditable pipeline.
