@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python (scripts/build_index.py)
+__pycache__/
+*.pyc
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Scratch/local test extraction
+/tmp/
