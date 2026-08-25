@@ -1,7 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-20T20:25:38Z",
+  "updated_at": "2026-08-25T13:15:09Z",
   "plugins": [
+    {
+      "name": "keystroke-fx",
+      "version": "1.0.0",
+      "author": "mwerner",
+      "description": "Efectos visuales al escribir en la terminal.",
+      "permissions": [],
+      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/marketplace/plugins/keystroke-fx.zip",
+      "sha256": "63b5f6ed2298f28473ff93c8012252420982b2cee425344976949a17349ca626",
+      "size_bytes": 3944
+    },
+    {
+      "name": "music-matrix",
+      "version": "1.0.0",
+      "author": "mwerner",
+      "description": "Lluvia Matrix sincronizada con el audio del sistema y la canci\u00f3n actual.",
+      "permissions": [
+        "shell",
+        "audio_capture"
+      ],
+      "zip_url": "https://raw.githubusercontent.com/JuanEoss/terminalis-releases/main/marketplace/plugins/music-matrix.zip",
+      "sha256": "a5b41c154e801685e3fceab14da3276a7ca3fd4010bd9e500a32c0364ddeaa1e",
+      "size_bytes": 3806
+    },
     {
       "name": "space-invaders",
       "version": "1.0",
