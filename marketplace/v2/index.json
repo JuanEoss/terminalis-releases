@@ -1,0 +1,50 @@
+{
+  "expires_at": "2026-09-25T12:24:24Z",
+  "issued_at": "2026-08-26T12:24:24Z",
+  "plugins": [
+    {
+      "author": "mwerner",
+      "description": "Efectos visuales al escribir en la terminal.",
+      "min_terminalis_version": "1.1.2",
+      "name": "keystroke-fx",
+      "permissions": [],
+      "plugin_api_version": 1,
+      "revocation_reason": null,
+      "revoked": false,
+      "sha256": "63b5f6ed2298f28473ff93c8012252420982b2cee425344976949a17349ca626",
+      "size_bytes": 3944,
+      "version": "1.0.0"
+    },
+    {
+      "author": "mwerner",
+      "description": "Lluvia Matrix sincronizada con el audio del sistema y la canción actual.",
+      "min_terminalis_version": "1.2.0",
+      "name": "music-matrix",
+      "permissions": [
+        "shell",
+        "audio_capture"
+      ],
+      "plugin_api_version": 1,
+      "revocation_reason": null,
+      "revoked": false,
+      "sha256": "a5b41c154e801685e3fceab14da3276a7ca3fd4010bd9e500a32c0364ddeaa1e",
+      "size_bytes": 3806,
+      "version": "1.0.0"
+    },
+    {
+      "author": "terminalis-plugins",
+      "description": "Play a sandboxed Space Invaders game inside Terminalis.",
+      "min_terminalis_version": "1.1.2",
+      "name": "space-invaders",
+      "permissions": [],
+      "plugin_api_version": 1,
+      "revocation_reason": null,
+      "revoked": false,
+      "sha256": "7b300541a65c617978d267d23a448264761fd27edcd2080e9346277dbe3bfe7d",
+      "size_bytes": 2588,
+      "version": "1.0"
+    }
+  ],
+  "revision": 1787747064,
+  "schema_version": 2
+}
