@@ -1,7 +1,22 @@
 {
-  "expires_at": "2026-09-26T13:56:44Z",
-  "issued_at": "2026-08-27T13:56:44Z",
+  "expires_at": "2026-09-27T14:45:28Z",
+  "issued_at": "2026-08-28T14:45:28Z",
   "plugins": [
+    {
+      "author": "dmernes",
+      "description": "Navegador de sesiones de Claude Code y Codex para reanudar, renombrar y eliminar.",
+      "min_terminalis_version": "1.3.0",
+      "name": "agent-sessions",
+      "permissions": [
+        "shell"
+      ],
+      "plugin_api_version": 1,
+      "revocation_reason": null,
+      "revoked": false,
+      "sha256": "66ff385d1bf3c73c813e55a980eb2a631d6905ecbfdd5d47116c1206310e05db",
+      "size_bytes": 14446,
+      "version": "1.2.0"
+    },
     {
       "author": "mwerner",
       "description": "Efectos visuales al escribir en la terminal.",
@@ -58,6 +73,6 @@
       "version": "1.0.0"
     }
   ],
-  "revision": 1787747065,
+  "revision": 1787747066,
   "schema_version": 2
 }
